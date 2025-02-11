@@ -40,7 +40,7 @@ export default {
         const url = new URL(request.url);
         const path = url.pathname.split(/\//);
 
-        if (!path[1].trim()) return new Response(JSON.stringify({ message: "Missing ROBLOX subdomain." }), { status: 400 });
+        if (!path[1].trim()) return new Response(JSON.stringify({ message: "Missing ROBLOX subdomain :3." }), { status: 400 });
 
         if (!domains.includes(path[1])) return new Response(JSON.stringify({ message: "Specified subdomain is not allowed." }), { status: 401 });
         
